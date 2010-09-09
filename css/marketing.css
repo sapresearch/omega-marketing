@@ -1,0 +1,825 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, code, em, font, img, kbd, q, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+
+    background: transparent;
+}
+
+html, body, #wrapper {
+    height: 100%;
+
+}
+
+body > #wrapper {
+
+    height: auto;
+    min-height: 100%;
+
+    background: url('/images/marketing_bg.png') repeat-x;
+}
+
+html, body {
+    background: url("/images/tile.gif") repeat scroll -70% 0 #F0F0F0;
+    color: #2D302D;
+   font:12px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+
+h1, h2, h3, h4 {
+    text-transform: lowercase;
+    font: bold "Century Schoolbook", Georgia, Times, serif;
+    margin: 0.5em 0;
+}
+
+h1 {
+
+    font-size: 1.3em;
+    font-weight: normal;
+
+}
+
+h1 span.h1 {
+     z-index:1;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    padding: 0.5em;
+    display: inline-block;
+    color: #FFF;
+    background: #393D39;
+}
+
+h2 a {
+
+    color: #00469C;
+}
+
+h2 a:hover {
+    color: #0069E9;
+}
+
+h2 {
+
+    color: #822448;
+    display: block;
+
+    font-size: 1.3em;
+    font-weight: normal;
+    letter-spacing: 0;
+    padding: 0.2em;
+}
+
+h3 {
+    color: #016390;
+
+}
+
+p {
+    line-height: 2em;
+
+}
+
+a {
+    color: #162D3D;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0063dc;
+}
+
+.om-table thead {
+
+    color: #FFF;
+    border: 1px solid #00469C;
+}
+
+.om-table th {
+    background: #00469C;
+    font-size: 1.2em;
+    padding: 0.2em;
+}
+
+.om-table tbody {
+    margin-top: 10px;
+}
+
+table.om-table  {
+    width: 100%;
+    font-size: 1em;
+    border-collapse: collapse;
+}
+
+.om-table tr {
+    height: 20px;
+}
+
+tr.even {
+    background: #FFF;
+
+}
+
+tr.odd {
+    background: #a0c4f0;
+
+}
+
+.om-table td {
+    border: 1px solid #DFE5E7;
+    color: #191919;
+    padding: 0 10px;
+    height: 28px;
+    vertical-align: middle;
+}
+
+form table input {
+    height: 22px;
+
+    padding: 0;
+    background: #F2F2F2;
+    border: 1px solid #A2A6A7;
+}
+
+#notification-flash-wrapper {
+    display:none;
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    z-index: 999999;
+}
+
+#notification-flash {
+    text-align:center;
+    opacity: 0.95;
+    font-size: 1.7em;
+    padding: 1em;
+    color: #FFF;
+    background: #191919;
+}
+
+#top-pane {
+
+    height: 28px;
+
+}
+
+#user_custom_bar a {
+    color: #FFF;
+    padding-top: 5px;
+    float: left;
+}
+
+#wrapper {
+    min-height: 400px;
+}
+
+#head {
+
+    width: 950px;
+    text-align: left;
+    margin: 0 auto;
+}
+
+#content {
+    
+    text-align: left;
+    margin: 0 auto;
+    width: 950px;
+    padding-bottom: 16em;
+}
+
+#left {
+    text-align: left;
+    float: left;
+    width: 70%;
+    margin: 0;
+}
+
+#right {
+    text-align: left !important;
+    width: 25%;
+    margin: 0;
+    float: right;
+}
+
+.center-content {
+    width: 950px;
+    margin: 0 auto;
+
+}
+
+/* Styles for the entire  menu */
+div#navigation {
+    position:relative;
+    margin: 50px auto;
+    width: 950px;
+
+}
+
+ul#topnav {
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 950px;
+    list-style: none;
+    position: relative;
+    font-size: 1em;
+    background: #0058C2;
+}
+
+ul#topnav li {
+    float: left;
+    margin: 0;
+    padding: 0; /*border-right: 1px solid #d1d1d1; *//*--Divider for each parent level links--*/
+}
+
+ul#topnav li a {
+    text-transform: capitalize;
+    padding: 10px 15px;
+    display: block;
+    COLOR: #fff;
+    text-decoration: none;
+}
+
+/* submenu */
+ul#topnav li div {
+
+    padding: 0 0 10px;
+    position: absolute;
+
+    top: 34px;
+    display: none; /*--Hide by default--*/
+    width: 170px;
+    background: #0058C2;
+    color: #fff; /*--Bottom right rounded corner--*/
+    -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 4px 4px;
+    border-radius: 4px;
+}
+
+
+
+/*--Show subnav on hover--*/
+ul#topnav li div a {
+    border-bottom: 1px dotted #448BE2; /*background: url(../images/menu_bg.png) repeat-x;*/
+    background: #0058C2;
+    padding: 5px;
+    display: block;
+}
+
+/*--Since we declared a link style on the parent list link, we will correct it back to its original state--*/
+ul#topnav li div a:hover {
+    background: url(../images/nav_a_hover.png) repeat-x;
+    text-decoration: none;
+}
+
+/**************************** End Menu *****************************/
+
+legend {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    color: #00469C;
+    padding: 0 0.5em;
+    font-style: italic;
+
+}
+
+
+.right {
+    float: right;
+
+}
+
+.left {
+    float: left;
+}
+
+
+#search_wrapper {
+    margin-top: 4px;
+    background: url("../images/omega_search_input.png");
+    width: 108px;
+    height: 20px;
+    float: right;
+}
+
+#search_input {
+    font-size: 0.7em;
+    color: #4d4d4d;
+    margin: 2px 2px 0 0;
+    height: 16px;
+    width: 80px;
+    border: 0px;
+    float: right;
+}
+
+#search_submit {
+    margin-top: 5px;
+    margin-left: 4px;
+    float: right;
+}
+
+.clear:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+
+
+/*========================= Form elements =====================================*/
+
+form p {
+    padding: 0.5em;
+}
+
+div.form {
+    background: url("../images/form_bg.gif") bottom repeat-x;
+    margin: 0 1em;
+
+}
+
+legend {
+    margin: 1em;
+}
+
+form input, textarea, select {
+    background: url("../images/textinputbg.gif") repeat-x scroll 0 0 #FFFFFF;
+    padding: 0.3em;
+    border: 1px solid #dedede;
+    color: #284966;
+}
+
+input {
+    font-family: "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    text-align: left;
+
+}
+
+a {
+    list-style-type: none;
+
+}
+
+/* ======================================= BUTTONS  =================================
+=                                                                                =
+=                                                                                =
+=                                                                                =
+=                                                                                =
+=================================================================================*/
+
+.om-button a, .om-button input, .om-button button {
+    position: relative;
+    text-transform: capitalize;
+    line-height: 18px;
+    height: 18px;
+    color: #191919;
+    vertical-align: middle;
+    background: none;
+    display: inline-block;
+    font: 12px "Lucida Grande", Verdana, Helvetica, Arial, sans-serif;
+
+    white-space: nowrap;
+    overflow: visible;
+    cursor: pointer;
+    padding: 4px 8px;
+    outline: none;
+    border: none;
+
+}
+
+.om-button button {
+    width: auto;
+    overflow: visible;
+}
+
+.om-icon-space {
+    padding: 4px 8px 4px 26px !important;
+}
+
+span.om-button {
+
+    position: relative;
+    -moz-border-radius: 3px;
+    -moz-webkit-radius: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    height: 20px;
+    background: url("../images/om_button_bg.png") repeat-x bottom transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc #bbb #a0a0a0;
+    margin: 0px;
+}
+
+.om-icon-only {
+    margin: 0 0.5em;
+    cursor: pointer;
+    background-image: url(../images/icons/iconSprite.png);
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+
+}
+
+span.om-button-active {
+
+    background: url("../images/om_button_bg_active.png") repeat-x bottom transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc #bbb #a0a0a0;
+    color: #0063dc;
+}
+
+input[type="submit"]::-moz-focus-inner, button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input[type="button"]::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+span.om-button span.om-icon {
+    background-image: url(../images/icons/iconSprite.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 2px;
+    margin: 0 0 0 4px;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+
+}
+
+.om-icon-date {
+    background-position: 0 -16px;
+}
+
+.om-icon-add {
+    background-position: 0 -32px;
+}
+
+.om-icon-edit {
+    background-position: 0 -48px;
+}
+
+.om-icon-delete {
+    background-position: 0 -64px;
+
+}
+
+.om-icon-user {
+    background-position: 0 -112px;
+}
+
+.om-icon-group {
+    background-position: 0 -128px;
+}
+
+.om-icon-mail {
+    background-position: 0 -144px;
+}
+
+.om-icon-sort-az {
+    background-position: 0 -160px;
+}
+
+.om-icon-sort-za {
+    background-position: 0 -176px;
+}
+
+.om-icon-favorite-add {
+    background-position: 0 -192px;
+}
+
+.om-icon-favorite-remove {
+    background-position: 0 -208px;
+}
+
+.om-icon-back {
+    background-position: 0 -224px;
+}
+
+.om-icon-mail-sent {
+    background-position: 0 -240px;
+}
+
+.om-icon-mail-open {
+    background-position: 0 -256px;
+}
+
+.om-icon-mail-new {
+    background-position: 0 -272px;
+}
+
+.om-icon-user-add {
+    background-position: 0 -288px;
+}
+
+.om-icon-household-add {
+    background-position: 0 -304px;
+}
+
+.om-icon-user-remove {
+    background-position: 0 -320px;
+}
+
+.om-icon-user-edit {
+    background-position: 0 -336px;
+}
+
+.om-icon-mail-reply {
+    background-position: 0 -352px;
+}
+
+.om-icon-save {
+    background-position: 0 -368px;
+}
+
+.om-icon-delete {
+    background-position: 0 -384px;
+}
+
+/*END BUTTONS*/
+
+form input.inputSmall {
+    width: 4em;
+}
+
+form input.inputMid {
+    width: 8em;
+}
+
+
+#loginPanel form label {
+    float: none;
+}
+
+/* must be same height as the footer */
+
+#footer_wrapper {
+    position: relative;
+    margin: -16em 0; /* negative value of footer height */
+    height: 16em;
+    clear: both;
+
+}
+
+#footer {
+    width: 950px;
+    color: #646767;
+    margin: 0 auto;
+    background: #191919;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    padding-top: 1em;
+}
+
+div.footer_blocks {
+    margin: 0 2em;
+}
+
+/* CLEAR FIX*/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+/* End hide from IE-mac */
+
+#footer li {
+    text-align: left;
+
+    padding: 0.5em;
+
+}
+
+#footer h1 {
+    font-size: 1.3em;
+    padding: 0.3em 0 1em;
+    -moz-border-radius: 4px;
+    color: #ECF2F4;
+    border: none;
+}
+
+#loginWrapper {
+    display: none;
+
+}
+
+#loginFailed {
+
+    font-size: 0.8em;
+    position: relative;
+}
+
+#ctlrBar {
+    margin-left: 1em;
+    height: 28px;
+    line-height: 28px;
+    float: right;
+    vertical-align: bottom
+}
+
+#ctlrBar a {
+    color: #FFF;
+    cursor: pointer;
+
+}
+
+
+
+
+
+.content li {
+    padding: 1em 0 1em 0;
+}
+
+
+
+.center {
+    text-align: center !important;
+}
+
+/** TODO  source it out to a different file **/
+#mkt_present {
+    padding: 90px 0 0 0;
+}
+
+#landing_list li {
+    border-bottom: none;
+    color: #421325;
+    text-shadow: #FFF 1px 1px 1px;
+    width: 500px;
+    background: url("/images/bullet.png") left no-repeat;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 1em 0 0 45px;
+}
+
+#landing_list li span.explanation {
+    font-size: 16px;
+    color: #2D302D;
+}
+
+#mkt_carousel {
+    -moz-box-shadow: 0 0 20px #646767;
+    -webkit-box-shadow: 0 0 20px #646767;
+    box-shadow: 0 0 20px #646767;
+
+}
+
+#mkt_try {
+    padding: 2em 2em 0 0;
+    font-size: 24px;
+
+    color: #162D3D;
+}
+
+#mkt_bubbles {
+    width:950px;
+    margin: 0 auto;
+    padding-top: 4em;
+    
+}
+
+#mkt_bubbles .bubble {
+    color: #0063dc;
+    font-size: 2em;
+    text-align: center;
+    margin: 2em;
+    float: left;
+    height: 160px;
+}
+#mkt_navigation{
+    position:absolute;
+    top:30px;
+    text-align:center;
+    margin:0 auto;
+}
+#mkt_navigation ul li {
+    padding: 0 1em;
+    float:left;
+}
+
+#mkt_navigation a{
+    text-shadow: #191919 1px -1px 1px;
+    font-weight:bold;
+    font-size:1.3em;
+    color: #f2f2f2;
+}
+
+.sidebar-menu h1 {
+    background: #CF3A72;
+    color: #FFF;
+    padding: 5px 20px
+}
+
+.sidebar-menu-content {
+    padding: 5px 20px;
+    border-bottom: 1px solid #CF3A72;
+    border-left: 1px solid #CF3A72;
+    border-right: 1px solid #CF3A72;
+}
+
+.sidebar-menu-nav {
+    border-bottom: 1px solid #e3e3e3;
+    color: #FFF;
+    display: block;
+    font-size: 1.2em;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0.2em 10px;
+}
+
+div.sidebar-menu-content li {
+    padding: 0.5em 0;
+    border-bottom: 1px dotted #191919;
+}
+
+li.item-list {
+    padding: 0.5em 0;
+    border-bottom: 1px dotted #2D302D;
+}
+
+div.sidebar-menu h1 {
+    margin: 0;
+}
+
+.corners-bottom {
+    -moz-border-radius-bottomleft: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-radius-bottomleft: 4px;
+    -webkit-border-radius-bottomright: 4px;
+    border-bottom-left-radius:4px;
+    border-bottom-right-radius:4px;
+}
+
+.corners-top {
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    -webkit-border-radius-topleft: 4px;
+    -webkit-border-radius-topright: 4px;
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+}
+
+
