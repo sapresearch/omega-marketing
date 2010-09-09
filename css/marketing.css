@@ -29,7 +29,7 @@ body > #wrapper {
 html, body {
     background: url("/images/tile.gif") repeat scroll -70% 0 #F0F0F0;
     color: #2D302D;
-   font:12px/1.5em "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font: 12px/1.5em "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
@@ -66,7 +66,7 @@ h1 {
 }
 
 h1 span.h1 {
-     z-index:1;
+    z-index: 1;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
     border-radius: 6px;
@@ -115,60 +115,13 @@ a:hover {
     color: #0063dc;
 }
 
-.om-table thead {
-
-    color: #FFF;
-    border: 1px solid #00469C;
-}
-
-.om-table th {
-    background: #00469C;
-    font-size: 1.2em;
-    padding: 0.2em;
-}
-
-.om-table tbody {
-    margin-top: 10px;
-}
-
-table.om-table  {
-    width: 100%;
-    font-size: 1em;
-    border-collapse: collapse;
-}
-
-.om-table tr {
-    height: 20px;
-}
-
-tr.even {
-    background: #FFF;
-
-}
-
-tr.odd {
-    background: #a0c4f0;
-
-}
-
-.om-table td {
-    border: 1px solid #DFE5E7;
-    color: #191919;
-    padding: 0 10px;
-    height: 28px;
-    vertical-align: middle;
-}
-
-form table input {
-    height: 22px;
-
-    padding: 0;
-    background: #F2F2F2;
-    border: 1px solid #A2A6A7;
+#logo {
+    padding-top: 30px;
+    position: absolute;
 }
 
 #notification-flash-wrapper {
-    display:none;
+    display: none;
     width: 100%;
     position: absolute;
     top: 20px;
@@ -177,7 +130,7 @@ form table input {
 }
 
 #notification-flash {
-    text-align:center;
+    text-align: center;
     opacity: 0.95;
     font-size: 1.7em;
     padding: 1em;
@@ -209,7 +162,7 @@ form table input {
 }
 
 #content {
-    
+
     text-align: left;
     margin: 0 auto;
     width: 950px;
@@ -235,88 +188,6 @@ form table input {
     margin: 0 auto;
 
 }
-
-/* Styles for the entire  menu */
-div#navigation {
-    position:relative;
-    margin: 50px auto;
-    width: 950px;
-
-}
-
-ul#topnav {
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-
-    margin: 0;
-    padding: 0;
-    float: left;
-    width: 950px;
-    list-style: none;
-    position: relative;
-    font-size: 1em;
-    background: #0058C2;
-}
-
-ul#topnav li {
-    float: left;
-    margin: 0;
-    padding: 0; /*border-right: 1px solid #d1d1d1; *//*--Divider for each parent level links--*/
-}
-
-ul#topnav li a {
-    text-transform: capitalize;
-    padding: 10px 15px;
-    display: block;
-    COLOR: #fff;
-    text-decoration: none;
-}
-
-/* submenu */
-ul#topnav li div {
-
-    padding: 0 0 10px;
-    position: absolute;
-
-    top: 34px;
-    display: none; /*--Hide by default--*/
-    width: 170px;
-    background: #0058C2;
-    color: #fff; /*--Bottom right rounded corner--*/
-    -moz-border-radius: 0 0 4px 4px;
-    -webkit-border-radius: 4px 4px;
-    border-radius: 4px;
-}
-
-
-
-/*--Show subnav on hover--*/
-ul#topnav li div a {
-    border-bottom: 1px dotted #448BE2; /*background: url(../images/menu_bg.png) repeat-x;*/
-    background: #0058C2;
-    padding: 5px;
-    display: block;
-}
-
-/*--Since we declared a link style on the parent list link, we will correct it back to its original state--*/
-ul#topnav li div a:hover {
-    background: url(../images/nav_a_hover.png) repeat-x;
-    text-decoration: none;
-}
-
-/**************************** End Menu *****************************/
-
-legend {
-    text-transform: uppercase;
-    font-size: 1.4em;
-    color: #00469C;
-    padding: 0 0.5em;
-    font-style: italic;
-
-}
-
-
 .right {
     float: right;
 
@@ -325,7 +196,6 @@ legend {
 .left {
     float: left;
 }
-
 
 #search_wrapper {
     margin-top: 4px;
@@ -367,8 +237,6 @@ legend {
 * html .clearfix {
     height: 1%;
 }
-
-
 
 /*========================= Form elements =====================================*/
 
@@ -596,7 +464,6 @@ form input.inputMid {
     width: 8em;
 }
 
-
 #loginPanel form label {
     float: none;
 }
@@ -685,15 +552,9 @@ div.footer_blocks {
 
 }
 
-
-
-
-
 .content li {
     padding: 1em 0 1em 0;
 }
-
-
 
 .center {
     text-align: center !important;
@@ -735,10 +596,10 @@ div.footer_blocks {
 }
 
 #mkt_bubbles {
-    width:950px;
+    width: 950px;
     margin: 0 auto;
     padding-top: 4em;
-    
+
 }
 
 #mkt_bubbles .bubble {
@@ -749,21 +610,25 @@ div.footer_blocks {
     float: left;
     height: 160px;
 }
-#mkt_navigation{
-    position:absolute;
-    top:30px;
-    text-align:center;
-    margin:0 auto;
-}
-#mkt_navigation ul li {
-    padding: 0 1em;
-    float:left;
+
+#mkt_navigation {
+    float:right;
+margin:0 auto;
+padding-top:30px;
+
+text-align:center;
+top:30px;
 }
 
-#mkt_navigation a{
+#mkt_navigation ul li {
+    padding: 0 1em;
+    float: left;
+}
+
+#mkt_navigation a {
     text-shadow: #191919 1px -1px 1px;
-    font-weight:bold;
-    font-size:1.3em;
+    font-weight: bold;
+    font-size: 1.3em;
     color: #f2f2f2;
 }
 
@@ -809,8 +674,8 @@ div.sidebar-menu h1 {
     -moz-border-radius-bottomright: 4px;
     -webkit-border-radius-bottomleft: 4px;
     -webkit-border-radius-bottomright: 4px;
-    border-bottom-left-radius:4px;
-    border-bottom-right-radius:4px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
 
 .corners-top {
@@ -818,8 +683,8 @@ div.sidebar-menu h1 {
     -moz-border-radius-topright: 4px;
     -webkit-border-radius-topleft: 4px;
     -webkit-border-radius-topright: 4px;
-    border-top-left-radius:4px;
-    border-top-right-radius:4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 
 
