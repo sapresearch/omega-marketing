@@ -85,7 +85,7 @@
 			{
 				$(obj).append('<div id="textholder'+randID+'_'+i+'" class="textholder" style="position:absolute;width:'+imgWidth+'px;bottom:0px;margin-bottom:'+-(imgHeight*o.textholderHeight+containerBorder)+'px;"><span></span></div>');
 				$('#textholder'+randID+'_'+i).css({'left':(i-1)*(imgWidth+parseInt(o.padding)*2),'margin-left':parseInt(o.padding)+containerPaddingLeft,'margin-right':o.padding});
-				$('#textholder'+randID+'_'+i).height(imgHeight*o.textholderHeight).css({'backgroundColor':'#FFF','opacity':'0.5'});
+				$('#textholder'+randID+'_'+i).height(imgHeight*o.textholderHeight).css({'backgroundColor':'#191919','opacity':'0.7'});
 				html = '<div class="minmax" id="minmax'+randID+'_'+i+'" style="width:8px;height:8px;position:absolute;top:1px;right:10px;cursor:pointer;background:url('+o.imagePath+'caption.gif) no-repeat 0 -8px"></div>';
 				html += '<div class="close" id="close'+randID+'_'+i+'" style="width:8px;height:8px;position:absolute;top:1px;right:1px;cursor:pointer;background:url('+o.imagePath+'caption.gif) no-repeat 0 0"></div>';
 				$('#textholder'+randID+'_'+i).append(html);
